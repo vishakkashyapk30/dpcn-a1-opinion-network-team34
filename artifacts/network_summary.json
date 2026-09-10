@@ -1,0 +1,9 @@
+{
+  "chosen_theta": 41.5,
+  "agent_nodes": 87,
+  "agent_edges": 456,
+  "agent_giant_frac": 0.8045977011494253,
+  "attitude_nodes": 60,
+  "attitude_edges": 498,
+  "attitude_thresh": 40.75
+}

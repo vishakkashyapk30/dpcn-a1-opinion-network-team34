@@ -1,0 +1,61 @@
+item,full_label,theme,mean_ari_after_shuffle,importance
+E04,E04. High-quality online learning can effectively complement classroom teaching.,E,0.6530824015510021,0.34691759844899794
+E01,E01. Project-based learning develops deeper understanding than examination-oriented learning.,E,0.6791252890810598,0.32087471091894015
+T02,T02. Generative AI tools should be allowed as learning aids in higher education.,T,0.683517658915092,0.316482341084908
+S15,S15. Building public trust is essential for responsible adoption of emerging technologies.,S,0.6857797187075064,0.3142202812924936
+T14,T14. Social media algorithms contribute to opinion polarization.,T,0.6918469566257407,0.3081530433742593
+V06,"V06. Water conservation should be a priority in households, institutions, and industries.",V,0.7121644265069289,0.2878355734930711
+V15,V15. Current generations have a responsibility to protect natural resources for future generations.,V,0.7138805229080388,0.28611947709196117
+V03,V03. Individuals should actively reduce their personal energy consumption.,V,0.7144604615750315,0.2855395384249685
+E05,E05. Students should be encouraged to take courses outside their primary discipline.,E,0.7203606523062414,0.27963934769375864
+T11,T11. Technology companies should explain how recommendation algorithms work.,T,0.7221127042054816,0.27788729579451843
+S11,S11. People should be free to express differing opinions as long as they do not promote harm or discrimination.,S,0.7281455986879973,0.27185440131200267
+E03,E03. Class attendance should be compulsory for all courses.,E,0.7282047949070881,0.2717952050929119
+S14,S14. Leaders should prioritize ethical decision-making even when it reduces short-term gains.,S,0.7294563884248645,0.2705436115751355
+V12,V12. Environmental sustainability should be integrated into higher education curricula.,V,0.7306143396790556,0.26938566032094435
+E09,E09. Collaborative learning is generally more effective than individual learning.,E,0.7316668138874355,0.2683331861125645
+T12,T12. Governments should introduce stricter regulations for Artificial Intelligence.,T,0.7334623811467713,0.2665376188532287
+V10,V10. Consumers should consider environmental impact when purchasing products.,V,0.7338408845333312,0.2661591154666688
+S06,"S06. Combating online misinformation requires shared responsibility among users, platforms, and governments.",S,0.7350980086793699,0.2649019913206301
+E14,E14. Strong collaborations between universities and industry improve student education.,E,0.7388238811208659,0.26117611887913406
+E02,E02. Traditional written examinations accurately measure a student's knowledge.,E,0.7403582250858584,0.25964177491414164
+E08,E08. Maintaining academic honesty is more important than obtaining high grades.,E,0.7436235943845348,0.25637640561546515
+T08,T08. AI-assisted diagnosis should become routine in healthcare.,T,0.7446132309058592,0.2553867690941408
+E15,E15. Continuous learning and skill development are essential throughout one's career.,E,0.7471133606200143,0.2528866393799857
+T04,T04. Every engineering student should receive formal education in AI.,T,0.7479115200606103,0.25208847993938965
+V11,V11. Technological innovation is essential for addressing environmental challenges.,V,0.750813493680278,0.24918650631972195
+S05,S05. Individuals should have greater control over how their personal data are collected and used.,S,0.7510011707397259,0.24899882926027406
+V02,V02. Governments should prioritize investment in renewable energy over fossil fuels.,V,0.7517399066796745,0.2482600933203255
+V13,V13. Companies should be held accountable for the environmental impacts of their activities.,V,0.7522408340895326,0.24775916591046743
+T13,T13. Cybersecurity deserves greater investment than the development of new digital technologies.,T,0.754366969386207,0.24563303061379305
+V01,V01. Climate change requires immediate global action.,V,0.7557268067314383,0.24427319326856167
+S08,S08. Diverse teams generally make better decisions than homogeneous teams.,S,0.7560485766783483,0.24395142332165165
+V05,V05. Single-use plastics should be significantly restricted.,V,0.7569831284761016,0.2430168715238984
+V08,V08. Universities should adopt environmentally sustainable campus practices even if implementation costs increase.,V,0.7603609999412124,0.23963900005878758
+S01,S01. Every individual has a responsibility to contribute positively to society.,S,0.7621569823761115,0.2378430176238885
+S13,S13. Critical evaluation of online information should be taught as a core educational skill.,S,0.7625822669333587,0.23741773306664127
+T01,T01. Artificial Intelligence will improve society more than it will create problems.,T,0.763754364081335,0.236245635918665
+S12,S12. Young people should actively participate in addressing societal challenges.,S,0.7638886988067629,0.2361113011932371
+T10,T10. Protection of personal data is more important than technological convenience.,T,0.7646657009913898,0.23533429900861025
+T09,T09. Autonomous vehicles will ultimately make transportation safer.,T,0.7661251073585652,0.2338748926414348
+S03,S03. New technologies should be evaluated for their societal impact before widespread deployment.,S,0.7706048640782086,0.2293951359217914
+E10,E10. Universities should prioritize innovation and problem-solving over rote learning.,E,0.7728114254889394,0.22718857451106056
+T06,T06. Most repetitive jobs will eventually be replaced by intelligent automation.,T,0.7746381996672879,0.22536180033271214
+T15,T15. Society will increasingly depend on AI-assisted decision making.,T,0.776119284595016,0.223880715404984
+E07,"E07. Publishing research before graduation should be encouraged, but not mandatory.",E,0.7842388692702539,0.21576113072974612
+V07,V07. Protecting biodiversity is essential for long-term human well-being.,V,0.7850269282655207,0.21497307173447933
+T03,T03. Students should disclose the use of AI in assignments and reports.,T,0.7850470308113578,0.21495296918864215
+S10,S10. Scientific evidence should play an important role in public policy decisions.,S,0.7890097794424366,0.21099022055756345
+S09,S09. Universities should promote an inclusive environment where different viewpoints can be discussed respectfully.,S,0.792634346951559,0.207365653048441
+V04,V04. Public transportation and non-motorized transport should be promoted even if they require additional public investment.,V,0.7936109596683535,0.2063890403316465
+E12,E12. Artificial intelligence should be integrated into teaching and personalized learning.,E,0.7965989671782238,0.20340103282177624
+S07,S07. Equal opportunities should be prioritized regardless of a person's background.,S,0.7999890550110927,0.20001094498890726
+S04,S04. Technology companies should be accountable for unethical use of their platforms.,S,0.8011547211807043,0.1988452788192957
+S02,S02. Universities should encourage students to participate in community service activities.,S,0.8015745118530005,0.19842548814699945
+E13,E13. Universities should invest more resources in research than in expanding infrastructure.,E,0.8048857111416109,0.1951142888583891
+E11,E11. University curricula should be updated more frequently to match emerging technologies.,E,0.805474497077201,0.19452550292279902
+V09,"V09. Products should be designed to encourage reuse, repair, and recycling.",V,0.820281863870434,0.179718136129566
+V14,V14. International cooperation is necessary to effectively address environmental challenges.,V,0.8314150132576295,0.16858498674237055
+E06,E06. Every undergraduate student should participate in at least one research project.,E,0.8323793069918416,0.1676206930081584
+T07,T07. Robots should replace humans in hazardous occupations whenever possible.,T,0.8340782724421297,0.16592172755787027
+T05,T05. Artificial Intelligence will significantly accelerate scientific discovery.,T,0.8594725368865843,0.14052746311341568

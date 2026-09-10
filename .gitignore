@@ -1,3 +1,16 @@
 # Assignment materials and data
 DPCN_Assignment_1.pdf
 Survey_Results_UC.csv
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+
+# Bulky intermediate matrices (rebuild via notebooks)
+artifacts/similarity_matrix.npy
+artifacts/overlap_matrix.npy
+artifacts/similarity_matrix.csv
+artifacts/threshold_scan.csv

@@ -1,0 +1,2360 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d5" for="edge" attr.name="n_respondents" attr.type="long"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d3" for="node" attr.name="variance" attr.type="double"/>
+<key id="d2" for="node" attr.name="mean_score" attr.type="double"/>
+<key id="d1" for="node" attr.name="theme" attr.type="string"/>
+<key id="d0" for="node" attr.name="full_label" attr.type="string"/>
+<graph edgedefault="undirected"><node id="T01">
+  <data key="d0">T01. Artificial Intelligence will improve society more than it will create problems.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.3103448275862069</data>
+  <data key="d3">0.2427665477606025</data>
+</node>
+<node id="T02">
+  <data key="d0">T02. Generative AI tools should be allowed as learning aids in higher education.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5114942528735632</data>
+  <data key="d3">0.24699431893248786</data>
+</node>
+<node id="T03">
+  <data key="d0">T03. Students should disclose the use of AI in assignments and reports.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5176470588235295</data>
+  <data key="d3">0.16733564013840826</data>
+</node>
+<node id="T04">
+  <data key="d0">T04. Every engineering student should receive formal education in AI.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.603448275862069</data>
+  <data key="d3">0.17895362663495834</data>
+</node>
+<node id="T05">
+  <data key="d0">T05. Artificial Intelligence will significantly accelerate scientific discovery.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5919540229885057</data>
+  <data key="d3">0.20993526225393053</data>
+</node>
+<node id="T06">
+  <data key="d0">T06. Most repetitive jobs will eventually be replaced by intelligent automation.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.603448275862069</data>
+  <data key="d3">0.19619500594530317</data>
+</node>
+<node id="T07">
+  <data key="d0">T07. Robots should replace humans in hazardous occupations whenever possible.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.603448275862069</data>
+  <data key="d3">0.2709076496234641</data>
+</node>
+<node id="T08">
+  <data key="d0">T08. AI-assisted diagnosis should become routine in healthcare.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.03488372093023256</data>
+  <data key="d3">0.30110870740941037</data>
+</node>
+<node id="T09">
+  <data key="d0">T09. Autonomous vehicles will ultimately make transportation safer.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.13372093023255813</data>
+  <data key="d3">0.22339778258518114</data>
+</node>
+<node id="T10">
+  <data key="d0">T10. Protection of personal data is more important than technological convenience.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5919540229885057</data>
+  <data key="d3">0.1926938829435857</data>
+</node>
+<node id="T11">
+  <data key="d0">T11. Technology companies should explain how recommendation algorithms work.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5823529411764706</data>
+  <data key="d3">0.19321799307958476</data>
+</node>
+<node id="T12">
+  <data key="d0">T12. Governments should introduce stricter regulations for Artificial Intelligence.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5290697674418605</data>
+  <data key="d3">0.25206192536506217</data>
+</node>
+<node id="T13">
+  <data key="d0">T13. Cybersecurity deserves greater investment than the development of new digital technologies.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5058823529411764</data>
+  <data key="d3">0.2029065743944636</data>
+</node>
+<node id="T14">
+  <data key="d0">T14. Social media algorithms contribute to opinion polarization.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.75</data>
+  <data key="d3">0.14970930232558138</data>
+</node>
+<node id="T15">
+  <data key="d0">T15. Society will increasingly depend on AI-assisted decision making.</data>
+  <data key="d1">T</data>
+  <data key="d2">0.5930232558139535</data>
+  <data key="d3">0.1483234180638183</data>
+</node>
+<node id="E01">
+  <data key="d0">E01. Project-based learning develops deeper understanding than examination-oriented learning.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.6609195402298851</data>
+  <data key="d3">0.20398995904346673</data>
+</node>
+<node id="E02">
+  <data key="d0">E02. Traditional written examinations accurately measure a student's knowledge.</data>
+  <data key="d1">E</data>
+  <data key="d2">-0.08045977011494253</data>
+  <data key="d3">0.3096181794160391</data>
+</node>
+<node id="E03">
+  <data key="d0">E03. Class attendance should be compulsory for all courses.</data>
+  <data key="d1">E</data>
+  <data key="d2">-0.47126436781609193</data>
+  <data key="d3">0.3123926542475889</data>
+</node>
+<node id="E04">
+  <data key="d0">E04. High-quality online learning can effectively complement classroom teaching.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.21839080459770116</data>
+  <data key="d3">0.33736292773153664</data>
+</node>
+<node id="E05">
+  <data key="d0">E05. Students should be encouraged to take courses outside their primary discipline.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.5470588235294118</data>
+  <data key="d3">0.20366782006920417</data>
+</node>
+<node id="E06">
+  <data key="d0">E06. Every undergraduate student should participate in at least one research project.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.436046511627907</data>
+  <data key="d3">0.2255611141157383</data>
+</node>
+<node id="E07">
+  <data key="d0">E07. Publishing research before graduation should be encouraged, but not mandatory.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.6494252873563219</data>
+  <data key="d3">0.1385916237283657</data>
+</node>
+<node id="E08">
+  <data key="d0">E08. Maintaining academic honesty is more important than obtaining high grades.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.6294117647058823</data>
+  <data key="d3">0.15972318339100344</data>
+</node>
+<node id="E09">
+  <data key="d0">E09. Collaborative learning is generally more effective than individual learning.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.3953488372093023</data>
+  <data key="d3">0.26811790156841525</data>
+</node>
+<node id="E10">
+  <data key="d0">E10. Universities should prioritize innovation and problem-solving over rote learning.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.764367816091954</data>
+  <data key="d3">0.11976483022856386</data>
+</node>
+<node id="E11">
+  <data key="d0">E11. University curricula should be updated more frequently to match emerging technologies.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.8103448275862069</data>
+  <data key="d3">0.09908838684106222</data>
+</node>
+<node id="E12">
+  <data key="d0">E12. Artificial intelligence should be integrated into teaching and personalized learning.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.46551724137931033</data>
+  <data key="d3">0.2631787554498613</data>
+</node>
+<node id="E13">
+  <data key="d0">E13. Universities should invest more resources in research than in expanding infrastructure.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.17058823529411765</data>
+  <data key="d3">0.2208996539792388</data>
+</node>
+<node id="E14">
+  <data key="d0">E14. Strong collaborations between universities and industry improve student education.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.764367816091954</data>
+  <data key="d3">0.11976483022856386</data>
+</node>
+<node id="E15">
+  <data key="d0">E15. Continuous learning and skill development are essential throughout one's career.</data>
+  <data key="d1">E</data>
+  <data key="d2">0.8563218390804598</data>
+  <data key="d3">0.06268991940811201</data>
+</node>
+<node id="S01">
+  <data key="d0">S01. Every individual has a responsibility to contribute positively to society.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.6395348837209303</data>
+  <data key="d3">0.20146024878312607</data>
+</node>
+<node id="S02">
+  <data key="d0">S02. Universities should encourage students to participate in community service activities.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.41954022988505746</data>
+  <data key="d3">0.2751354207953495</data>
+</node>
+<node id="S03">
+  <data key="d0">S03. New technologies should be evaluated for their societal impact before widespread deployment.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.632183908045977</data>
+  <data key="d3">0.18655040295943986</data>
+</node>
+<node id="S04">
+  <data key="d0">S04. Technology companies should be accountable for unethical use of their platforms.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.5747126436781609</data>
+  <data key="d3">0.24441802087462022</data>
+</node>
+<node id="S05">
+  <data key="d0">S05. Individuals should have greater control over how their personal data are collected and used.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.8160919540229885</data>
+  <data key="d3">0.08686748579733124</data>
+</node>
+<node id="S06">
+  <data key="d0">S06. Combating online misinformation requires shared responsibility among users, platforms, and governments.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.6954022988505747</data>
+  <data key="d3">0.16296736689126698</data>
+</node>
+<node id="S07">
+  <data key="d0">S07. Equal opportunities should be prioritized regardless of a person's background.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.7151162790697675</data>
+  <data key="d3">0.1543063818280151</data>
+</node>
+<node id="S08">
+  <data key="d0">S08. Diverse teams generally make better decisions than homogeneous teams.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.45930232558139533</data>
+  <data key="d3">0.2512506760411033</data>
+</node>
+<node id="S09">
+  <data key="d0">S09. Universities should promote an inclusive environment where different viewpoints can be discussed respectfully.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.7352941176470589</data>
+  <data key="d3">0.08581314878892733</data>
+</node>
+<node id="S10">
+  <data key="d0">S10. Scientific evidence should play an important role in public policy decisions.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.625</data>
+  <data key="d3">0.13020833333333334</data>
+</node>
+<node id="S11">
+  <data key="d0">S11. People should be free to express differing opinions as long as they do not promote harm or discrimination.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.7758620689655172</data>
+  <data key="d3">0.09056678557273089</data>
+</node>
+<node id="S12">
+  <data key="d0">S12. Young people should actively participate in addressing societal challenges.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.627906976744186</data>
+  <data key="d3">0.15224445646295295</data>
+</node>
+<node id="S13">
+  <data key="d0">S13. Critical evaluation of online information should be taught as a core educational skill.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.632183908045977</data>
+  <data key="d3">0.12907913859162376</data>
+</node>
+<node id="S14">
+  <data key="d0">S14. Leaders should prioritize ethical decision-making even when it reduces short-term gains.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.6488095238095238</data>
+  <data key="d3">0.135593820861678</data>
+</node>
+<node id="S15">
+  <data key="d0">S15. Building public trust is essential for responsible adoption of emerging technologies.</data>
+  <data key="d1">S</data>
+  <data key="d2">0.622093023255814</data>
+  <data key="d3">0.1856746890210925</data>
+</node>
+<node id="V01">
+  <data key="d0">V01. Climate change requires immediate global action.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.7588235294117647</data>
+  <data key="d3">0.09771626297577858</data>
+</node>
+<node id="V02">
+  <data key="d0">V02. Governments should prioritize investment in renewable energy over fossil fuels.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.7176470588235294</data>
+  <data key="d3">0.13204152249134948</data>
+</node>
+<node id="V03">
+  <data key="d0">V03. Individuals should actively reduce their personal energy consumption.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.48255813953488375</data>
+  <data key="d3">0.21190508382909687</data>
+</node>
+<node id="V04">
+  <data key="d0">V04. Public transportation and non-motorized transport should be promoted even if they require additional public investment.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.6918604651162791</data>
+  <data key="d3">0.12888723634396967</data>
+</node>
+<node id="V05">
+  <data key="d0">V05. Single-use plastics should be significantly restricted.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.686046511627907</data>
+  <data key="d3">0.1572471606273661</data>
+</node>
+<node id="V06">
+  <data key="d0">V06. Water conservation should be a priority in households, institutions, and industries.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.7559523809523809</data>
+  <data key="d3">0.08627409297052153</data>
+</node>
+<node id="V07">
+  <data key="d0">V07. Protecting biodiversity is essential for long-term human well-being.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.7470588235294118</data>
+  <data key="d3">0.1154325259515571</data>
+</node>
+<node id="V08">
+  <data key="d0">V08. Universities should adopt environmentally sustainable campus practices even if implementation costs increase.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.6470588235294118</data>
+  <data key="d3">0.1342560553633218</data>
+</node>
+<node id="V09">
+  <data key="d0">V09. Products should be designed to encourage reuse, repair, and recycling.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.8</data>
+  <data key="d3">0.12470588235294117</data>
+</node>
+<node id="V10">
+  <data key="d0">V10. Consumers should consider environmental impact when purchasing products.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.5176470588235295</data>
+  <data key="d3">0.18498269896193772</data>
+</node>
+<node id="V11">
+  <data key="d0">V11. Technological innovation is essential for addressing environmental challenges.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.6607142857142857</data>
+  <data key="d3">0.12000425170068027</data>
+</node>
+<node id="V12">
+  <data key="d0">V12. Environmental sustainability should be integrated into higher education curricula.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.5595238095238095</data>
+  <data key="d3">0.2107426303854875</data>
+</node>
+<node id="V13">
+  <data key="d0">V13. Companies should be held accountable for the environmental impacts of their activities.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.8352941176470589</data>
+  <data key="d3">0.07875432525951559</data>
+</node>
+<node id="V14">
+  <data key="d0">V14. International cooperation is necessary to effectively address environmental challenges.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.7764705882352941</data>
+  <data key="d3">0.10297577854671282</data>
+</node>
+<node id="V15">
+  <data key="d0">V15. Current generations have a responsibility to protect natural resources for future generations.</data>
+  <data key="d1">V</data>
+  <data key="d2">0.7529411764705882</data>
+  <data key="d3">0.09778546712802764</data>
+</node>
+<edge source="T04" target="T14">
+  <data key="d4">43.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T04" target="E10">
+  <data key="d4">45.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T04" target="E11">
+  <data key="d4">42.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T04" target="E14">
+  <data key="d4">44.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T04" target="E15">
+  <data key="d4">46.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T04" target="S05">
+  <data key="d4">43.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T04" target="V01">
+  <data key="d4">41.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T04" target="V09">
+  <data key="d4">43.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T04" target="V13">
+  <data key="d4">45.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T04" target="V14">
+  <data key="d4">41.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T04" target="V15">
+  <data key="d4">40.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T05" target="E10">
+  <data key="d4">41.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T05" target="E11">
+  <data key="d4">42.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T05" target="E14">
+  <data key="d4">41.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T05" target="E15">
+  <data key="d4">45.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T05" target="S05">
+  <data key="d4">44.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T05" target="S07">
+  <data key="d4">41.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T05" target="S11">
+  <data key="d4">44.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T05" target="V01">
+  <data key="d4">40.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T05" target="V06">
+  <data key="d4">41.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T05" target="V09">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T05" target="V13">
+  <data key="d4">43.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T05" target="V14">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T06" target="T14">
+  <data key="d4">41.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T06" target="E10">
+  <data key="d4">46.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T06" target="E11">
+  <data key="d4">45.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T06" target="E14">
+  <data key="d4">46.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T06" target="E15">
+  <data key="d4">47.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T06" target="S05">
+  <data key="d4">43.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T06" target="S07">
+  <data key="d4">42.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T06" target="S09">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T06" target="V02">
+  <data key="d4">42.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T06" target="V06">
+  <data key="d4">41.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T06" target="V07">
+  <data key="d4">42.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T06" target="V09">
+  <data key="d4">47.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T06" target="V13">
+  <data key="d4">46.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T06" target="V14">
+  <data key="d4">43.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T06" target="V15">
+  <data key="d4">43.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T07" target="T14">
+  <data key="d4">41.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T07" target="E11">
+  <data key="d4">44.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T07" target="E14">
+  <data key="d4">40.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T07" target="E15">
+  <data key="d4">45.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T07" target="S05">
+  <data key="d4">42.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T07" target="S07">
+  <data key="d4">42.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T07" target="S09">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T07" target="S11">
+  <data key="d4">43.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T07" target="V01">
+  <data key="d4">45.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T07" target="V09">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T07" target="V13">
+  <data key="d4">45.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T07" target="V14">
+  <data key="d4">43.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T10" target="T14">
+  <data key="d4">42.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T10" target="E10">
+  <data key="d4">42.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T10" target="E11">
+  <data key="d4">44.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T10" target="E14">
+  <data key="d4">41.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T10" target="E15">
+  <data key="d4">44.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T10" target="S05">
+  <data key="d4">47.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T10" target="S11">
+  <data key="d4">40.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="T10" target="V09">
+  <data key="d4">42.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T10" target="V13">
+  <data key="d4">44.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T11" target="E11">
+  <data key="d4">43.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T11" target="E15">
+  <data key="d4">43.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T11" target="S05">
+  <data key="d4">44.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T11" target="V13">
+  <data key="d4">42.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="T12" target="T14">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T12" target="S05">
+  <data key="d4">42.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="E01">
+  <data key="d4">41.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="E07">
+  <data key="d4">43.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="E10">
+  <data key="d4">53.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="E11">
+  <data key="d4">52.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="E14">
+  <data key="d4">49.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="E15">
+  <data key="d4">55.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="S01">
+  <data key="d4">42.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T14" target="S03">
+  <data key="d4">42.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="S05">
+  <data key="d4">55.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="S06">
+  <data key="d4">49.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="S07">
+  <data key="d4">47.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T14" target="S09">
+  <data key="d4">48.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="S10">
+  <data key="d4">42.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="T14" target="S11">
+  <data key="d4">48.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="S12">
+  <data key="d4">42.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T14" target="S13">
+  <data key="d4">43.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T14" target="S14">
+  <data key="d4">43.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="T14" target="S15">
+  <data key="d4">43.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T14" target="V01">
+  <data key="d4">51.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="V02">
+  <data key="d4">50.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="V04">
+  <data key="d4">45.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T14" target="V05">
+  <data key="d4">42.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="T14" target="V06">
+  <data key="d4">45.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="T14" target="V07">
+  <data key="d4">46.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="V08">
+  <data key="d4">42.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="V09">
+  <data key="d4">52.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="V11">
+  <data key="d4">43.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="T14" target="V13">
+  <data key="d4">55.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="V14">
+  <data key="d4">50.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T14" target="V15">
+  <data key="d4">47.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T15" target="E11">
+  <data key="d4">41.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T15" target="E15">
+  <data key="d4">44.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T15" target="S05">
+  <data key="d4">42.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T15" target="S11">
+  <data key="d4">41.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="T15" target="V09">
+  <data key="d4">41.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="T15" target="V13">
+  <data key="d4">43.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E01" target="E10">
+  <data key="d4">48.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E01" target="E11">
+  <data key="d4">47.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E01" target="E14">
+  <data key="d4">45.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E01" target="E15">
+  <data key="d4">50.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E01" target="S05">
+  <data key="d4">46.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E01" target="S06">
+  <data key="d4">44.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E01" target="S07">
+  <data key="d4">45.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E01" target="S09">
+  <data key="d4">44.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E01" target="S11">
+  <data key="d4">46.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E01" target="V01">
+  <data key="d4">44.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E01" target="V02">
+  <data key="d4">41.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E01" target="V05">
+  <data key="d4">43.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E01" target="V06">
+  <data key="d4">43.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E01" target="V07">
+  <data key="d4">46.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E01" target="V09">
+  <data key="d4">47.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E01" target="V13">
+  <data key="d4">47.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E01" target="V14">
+  <data key="d4">47.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E01" target="V15">
+  <data key="d4">42.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E05" target="E15">
+  <data key="d4">41.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="E10">
+  <data key="d4">49.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E07" target="E11">
+  <data key="d4">49.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E07" target="E14">
+  <data key="d4">48.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E07" target="E15">
+  <data key="d4">51.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E07" target="S05">
+  <data key="d4">47.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E07" target="S06">
+  <data key="d4">44.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E07" target="S07">
+  <data key="d4">42.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E07" target="S09">
+  <data key="d4">44.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="S11">
+  <data key="d4">48.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E07" target="V01">
+  <data key="d4">44.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="V02">
+  <data key="d4">42.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="V05">
+  <data key="d4">41.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E07" target="V06">
+  <data key="d4">43.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E07" target="V07">
+  <data key="d4">46.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="V08">
+  <data key="d4">40.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="V09">
+  <data key="d4">48.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="V13">
+  <data key="d4">49.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="V14">
+  <data key="d4">47.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E07" target="V15">
+  <data key="d4">44.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E08" target="E10">
+  <data key="d4">42.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E08" target="E11">
+  <data key="d4">46.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E08" target="E14">
+  <data key="d4">43.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E08" target="E15">
+  <data key="d4">48.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E08" target="S05">
+  <data key="d4">44.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E08" target="S07">
+  <data key="d4">40.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E08" target="S09">
+  <data key="d4">41.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="E08" target="S11">
+  <data key="d4">42.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E08" target="V01">
+  <data key="d4">41.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E08" target="V02">
+  <data key="d4">41.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="E08" target="V07">
+  <data key="d4">41.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="E08" target="V09">
+  <data key="d4">46.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="E08" target="V13">
+  <data key="d4">45.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="E08" target="V14">
+  <data key="d4">42.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="E08" target="V15">
+  <data key="d4">41.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="E10" target="E11">
+  <data key="d4">56.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="E14">
+  <data key="d4">55.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="E15">
+  <data key="d4">60.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="S01">
+  <data key="d4">44.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E10" target="S03">
+  <data key="d4">42.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="S04">
+  <data key="d4">41.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="S05">
+  <data key="d4">56.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="S06">
+  <data key="d4">52.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="S07">
+  <data key="d4">51.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E10" target="S09">
+  <data key="d4">51.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="S10">
+  <data key="d4">43.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E10" target="S11">
+  <data key="d4">54.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="S12">
+  <data key="d4">44.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E10" target="S13">
+  <data key="d4">45.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E10" target="S14">
+  <data key="d4">46.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E10" target="S15">
+  <data key="d4">46.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E10" target="V01">
+  <data key="d4">52.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="V02">
+  <data key="d4">51.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="V04">
+  <data key="d4">47.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E10" target="V05">
+  <data key="d4">47.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E10" target="V06">
+  <data key="d4">50.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E10" target="V07">
+  <data key="d4">52.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="V08">
+  <data key="d4">45.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="V09">
+  <data key="d4">57.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="V11">
+  <data key="d4">46.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E10" target="V13">
+  <data key="d4">58.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="V14">
+  <data key="d4">54.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E10" target="V15">
+  <data key="d4">52.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="E14">
+  <data key="d4">57.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="E15">
+  <data key="d4">63.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="S01">
+  <data key="d4">46.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E11" target="S03">
+  <data key="d4">45.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="S04">
+  <data key="d4">42.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="S05">
+  <data key="d4">59.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="S06">
+  <data key="d4">51.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="S07">
+  <data key="d4">52.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E11" target="S09">
+  <data key="d4">53.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="S10">
+  <data key="d4">45.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E11" target="S11">
+  <data key="d4">57.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="S12">
+  <data key="d4">47.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E11" target="S13">
+  <data key="d4">46.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E11" target="S14">
+  <data key="d4">46.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E11" target="S15">
+  <data key="d4">44.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E11" target="V01">
+  <data key="d4">53.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="V02">
+  <data key="d4">53.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="V04">
+  <data key="d4">50.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E11" target="V05">
+  <data key="d4">50.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E11" target="V06">
+  <data key="d4">53.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E11" target="V07">
+  <data key="d4">56.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="V08">
+  <data key="d4">49.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="V09">
+  <data key="d4">59.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="V11">
+  <data key="d4">46.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E11" target="V13">
+  <data key="d4">59.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="V14">
+  <data key="d4">56.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E11" target="V15">
+  <data key="d4">54.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="E15">
+  <data key="d4">61.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E14" target="S01">
+  <data key="d4">44.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E14" target="S03">
+  <data key="d4">43.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E14" target="S04">
+  <data key="d4">43.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E14" target="S05">
+  <data key="d4">55.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E14" target="S06">
+  <data key="d4">50.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E14" target="S07">
+  <data key="d4">50.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E14" target="S09">
+  <data key="d4">51.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="S10">
+  <data key="d4">44.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E14" target="S11">
+  <data key="d4">54.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E14" target="S12">
+  <data key="d4">44.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E14" target="S13">
+  <data key="d4">44.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E14" target="S14">
+  <data key="d4">45.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E14" target="S15">
+  <data key="d4">45.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E14" target="V01">
+  <data key="d4">50.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="V02">
+  <data key="d4">51.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="V04">
+  <data key="d4">46.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E14" target="V05">
+  <data key="d4">47.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E14" target="V06">
+  <data key="d4">49.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E14" target="V07">
+  <data key="d4">51.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="V08">
+  <data key="d4">44.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="V09">
+  <data key="d4">56.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="V11">
+  <data key="d4">44.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E14" target="V13">
+  <data key="d4">55.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="V14">
+  <data key="d4">53.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E14" target="V15">
+  <data key="d4">51.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="S01">
+  <data key="d4">49.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E15" target="S03">
+  <data key="d4">48.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E15" target="S04">
+  <data key="d4">44.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E15" target="S05">
+  <data key="d4">61.75</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E15" target="S06">
+  <data key="d4">54.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E15" target="S07">
+  <data key="d4">56.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E15" target="S09">
+  <data key="d4">56.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="S10">
+  <data key="d4">47.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E15" target="S11">
+  <data key="d4">60.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E15" target="S12">
+  <data key="d4">47.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E15" target="S13">
+  <data key="d4">47.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="E15" target="S14">
+  <data key="d4">48.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E15" target="S15">
+  <data key="d4">48.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E15" target="V01">
+  <data key="d4">57.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="V02">
+  <data key="d4">55.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="V04">
+  <data key="d4">52.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E15" target="V05">
+  <data key="d4">53.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="E15" target="V06">
+  <data key="d4">55.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E15" target="V07">
+  <data key="d4">56.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="V08">
+  <data key="d4">49.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="V09">
+  <data key="d4">61.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="V11">
+  <data key="d4">49.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E15" target="V12">
+  <data key="d4">43.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="E15" target="V13">
+  <data key="d4">62.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="V14">
+  <data key="d4">59.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="E15" target="V15">
+  <data key="d4">57.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S01" target="S03">
+  <data key="d4">44.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S01" target="S05">
+  <data key="d4">46.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S01" target="S07">
+  <data key="d4">43.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S01" target="S09">
+  <data key="d4">42.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S01" target="S11">
+  <data key="d4">44.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S01" target="S14">
+  <data key="d4">40.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S01" target="V01">
+  <data key="d4">43.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S01" target="V02">
+  <data key="d4">41.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S01" target="V06">
+  <data key="d4">42.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S01" target="V07">
+  <data key="d4">42.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S01" target="V09">
+  <data key="d4">46.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S01" target="V13">
+  <data key="d4">46.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S01" target="V14">
+  <data key="d4">43.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S01" target="V15">
+  <data key="d4">42.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S03" target="S05">
+  <data key="d4">45.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S03" target="S06">
+  <data key="d4">41.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S03" target="S09">
+  <data key="d4">42.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S03" target="S11">
+  <data key="d4">43.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S03" target="V01">
+  <data key="d4">43.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S03" target="V05">
+  <data key="d4">40.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S03" target="V06">
+  <data key="d4">42.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S03" target="V07">
+  <data key="d4">42.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S03" target="V09">
+  <data key="d4">43.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S03" target="V13">
+  <data key="d4">46.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S03" target="V14">
+  <data key="d4">42.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S03" target="V15">
+  <data key="d4">43.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S04" target="S05">
+  <data key="d4">43.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S04" target="S09">
+  <data key="d4">41.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S04" target="V07">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S04" target="V09">
+  <data key="d4">45.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S04" target="V13">
+  <data key="d4">44.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S04" target="V14">
+  <data key="d4">42.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S04" target="V15">
+  <data key="d4">40.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="S06">
+  <data key="d4">51.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S05" target="S07">
+  <data key="d4">53.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S05" target="S09">
+  <data key="d4">52.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="S10">
+  <data key="d4">44.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S05" target="S11">
+  <data key="d4">56.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S05" target="S12">
+  <data key="d4">46.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S05" target="S13">
+  <data key="d4">46.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S05" target="S14">
+  <data key="d4">46.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S05" target="S15">
+  <data key="d4">45.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S05" target="V01">
+  <data key="d4">54.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="V02">
+  <data key="d4">50.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="V04">
+  <data key="d4">50.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S05" target="V05">
+  <data key="d4">49.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S05" target="V06">
+  <data key="d4">54.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S05" target="V07">
+  <data key="d4">53.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="V08">
+  <data key="d4">46.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="V09">
+  <data key="d4">58.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="V11">
+  <data key="d4">47.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S05" target="V12">
+  <data key="d4">41.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S05" target="V13">
+  <data key="d4">60.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="V14">
+  <data key="d4">55.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S05" target="V15">
+  <data key="d4">54.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="S07">
+  <data key="d4">47.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S06" target="S09">
+  <data key="d4">48.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="S11">
+  <data key="d4">49.0</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S06" target="S12">
+  <data key="d4">40.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S06" target="S13">
+  <data key="d4">41.5</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S06" target="S14">
+  <data key="d4">41.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S06" target="S15">
+  <data key="d4">42.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S06" target="V01">
+  <data key="d4">49.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="V02">
+  <data key="d4">47.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="V04">
+  <data key="d4">45.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S06" target="V05">
+  <data key="d4">47.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S06" target="V06">
+  <data key="d4">45.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S06" target="V07">
+  <data key="d4">48.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="V08">
+  <data key="d4">43.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="V09">
+  <data key="d4">52.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="V11">
+  <data key="d4">45.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S06" target="V13">
+  <data key="d4">53.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="V14">
+  <data key="d4">50.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S06" target="V15">
+  <data key="d4">46.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S07" target="S09">
+  <data key="d4">49.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="S11">
+  <data key="d4">50.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S07" target="S12">
+  <data key="d4">41.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S07" target="S13">
+  <data key="d4">42.25</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S07" target="S14">
+  <data key="d4">44.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S07" target="S15">
+  <data key="d4">43.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S07" target="V01">
+  <data key="d4">50.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="V02">
+  <data key="d4">49.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="V04">
+  <data key="d4">47.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S07" target="V05">
+  <data key="d4">46.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S07" target="V06">
+  <data key="d4">48.25</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S07" target="V07">
+  <data key="d4">49.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="V08">
+  <data key="d4">43.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="V09">
+  <data key="d4">54.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="V11">
+  <data key="d4">44.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S07" target="V13">
+  <data key="d4">55.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="V14">
+  <data key="d4">52.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S07" target="V15">
+  <data key="d4">49.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S09" target="S10">
+  <data key="d4">41.0</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S09" target="S11">
+  <data key="d4">52.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S09" target="S12">
+  <data key="d4">42.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S09" target="S13">
+  <data key="d4">43.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S09" target="S14">
+  <data key="d4">44.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S09" target="S15">
+  <data key="d4">42.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S09" target="V01">
+  <data key="d4">48.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S09" target="V02">
+  <data key="d4">47.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S09" target="V04">
+  <data key="d4">46.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S09" target="V05">
+  <data key="d4">46.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S09" target="V06">
+  <data key="d4">48.0</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S09" target="V07">
+  <data key="d4">49.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S09" target="V08">
+  <data key="d4">42.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S09" target="V09">
+  <data key="d4">54.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S09" target="V11">
+  <data key="d4">43.5</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S09" target="V13">
+  <data key="d4">54.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S09" target="V14">
+  <data key="d4">52.25</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S09" target="V15">
+  <data key="d4">49.25</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S10" target="S11">
+  <data key="d4">42.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S10" target="V01">
+  <data key="d4">41.25</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S10" target="V07">
+  <data key="d4">41.25</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S10" target="V09">
+  <data key="d4">44.0</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S10" target="V13">
+  <data key="d4">44.5</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S10" target="V14">
+  <data key="d4">41.75</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S10" target="V15">
+  <data key="d4">43.0</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S11" target="S12">
+  <data key="d4">44.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S11" target="S13">
+  <data key="d4">45.25</data>
+  <data key="d5">87</data>
+</edge>
+<edge source="S11" target="S14">
+  <data key="d4">45.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S11" target="S15">
+  <data key="d4">43.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S11" target="V01">
+  <data key="d4">51.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S11" target="V02">
+  <data key="d4">49.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S11" target="V04">
+  <data key="d4">48.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S11" target="V05">
+  <data key="d4">48.0</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S11" target="V06">
+  <data key="d4">52.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S11" target="V07">
+  <data key="d4">52.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S11" target="V08">
+  <data key="d4">45.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S11" target="V09">
+  <data key="d4">55.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S11" target="V11">
+  <data key="d4">45.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S11" target="V13">
+  <data key="d4">57.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S11" target="V14">
+  <data key="d4">54.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S11" target="V15">
+  <data key="d4">52.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S12" target="V01">
+  <data key="d4">41.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S12" target="V02">
+  <data key="d4">41.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S12" target="V05">
+  <data key="d4">41.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S12" target="V07">
+  <data key="d4">45.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S12" target="V09">
+  <data key="d4">45.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S12" target="V13">
+  <data key="d4">46.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S12" target="V14">
+  <data key="d4">43.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S12" target="V15">
+  <data key="d4">43.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S13" target="V01">
+  <data key="d4">43.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S13" target="V02">
+  <data key="d4">41.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S13" target="V04">
+  <data key="d4">41.75</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="S13" target="V06">
+  <data key="d4">43.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S13" target="V07">
+  <data key="d4">42.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S13" target="V09">
+  <data key="d4">46.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S13" target="V13">
+  <data key="d4">48.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S13" target="V14">
+  <data key="d4">45.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S13" target="V15">
+  <data key="d4">44.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S14" target="V01">
+  <data key="d4">43.5</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S14" target="V02">
+  <data key="d4">43.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S14" target="V06">
+  <data key="d4">42.5</data>
+  <data key="d5">81</data>
+</edge>
+<edge source="S14" target="V07">
+  <data key="d4">45.0</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S14" target="V09">
+  <data key="d4">49.0</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S14" target="V13">
+  <data key="d4">49.5</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S14" target="V14">
+  <data key="d4">46.75</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S14" target="V15">
+  <data key="d4">44.25</data>
+  <data key="d5">82</data>
+</edge>
+<edge source="S15" target="V01">
+  <data key="d4">42.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S15" target="V02">
+  <data key="d4">43.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S15" target="V04">
+  <data key="d4">41.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="S15" target="V06">
+  <data key="d4">41.75</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="S15" target="V07">
+  <data key="d4">41.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S15" target="V09">
+  <data key="d4">46.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S15" target="V13">
+  <data key="d4">47.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S15" target="V14">
+  <data key="d4">43.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="S15" target="V15">
+  <data key="d4">42.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V02">
+  <data key="d4">50.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V04">
+  <data key="d4">48.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V01" target="V05">
+  <data key="d4">45.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V01" target="V06">
+  <data key="d4">48.5</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="V01" target="V07">
+  <data key="d4">49.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V08">
+  <data key="d4">44.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V09">
+  <data key="d4">53.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V11">
+  <data key="d4">45.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V13">
+  <data key="d4">57.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V14">
+  <data key="d4">53.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V01" target="V15">
+  <data key="d4">50.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V02" target="V04">
+  <data key="d4">46.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V02" target="V05">
+  <data key="d4">45.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V02" target="V06">
+  <data key="d4">46.0</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="V02" target="V07">
+  <data key="d4">49.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V02" target="V08">
+  <data key="d4">43.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V02" target="V09">
+  <data key="d4">53.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V02" target="V11">
+  <data key="d4">43.25</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="V02" target="V13">
+  <data key="d4">54.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V02" target="V14">
+  <data key="d4">51.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V02" target="V15">
+  <data key="d4">47.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V04" target="V05">
+  <data key="d4">44.5</data>
+  <data key="d5">86</data>
+</edge>
+<edge source="V04" target="V06">
+  <data key="d4">47.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V04" target="V07">
+  <data key="d4">46.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V04" target="V08">
+  <data key="d4">42.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V04" target="V09">
+  <data key="d4">51.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V04" target="V11">
+  <data key="d4">41.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V04" target="V13">
+  <data key="d4">53.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V04" target="V14">
+  <data key="d4">49.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V04" target="V15">
+  <data key="d4">48.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V05" target="V06">
+  <data key="d4">47.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V05" target="V07">
+  <data key="d4">51.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V05" target="V08">
+  <data key="d4">42.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V05" target="V09">
+  <data key="d4">51.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V05" target="V11">
+  <data key="d4">42.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V05" target="V13">
+  <data key="d4">51.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V05" target="V14">
+  <data key="d4">50.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V05" target="V15">
+  <data key="d4">48.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V06" target="V07">
+  <data key="d4">50.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V06" target="V08">
+  <data key="d4">43.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V06" target="V09">
+  <data key="d4">53.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V06" target="V11">
+  <data key="d4">43.25</data>
+  <data key="d5">83</data>
+</edge>
+<edge source="V06" target="V13">
+  <data key="d4">54.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V06" target="V14">
+  <data key="d4">50.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V06" target="V15">
+  <data key="d4">51.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V07" target="V08">
+  <data key="d4">47.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V07" target="V09">
+  <data key="d4">55.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V07" target="V11">
+  <data key="d4">43.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V07" target="V12">
+  <data key="d4">41.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V07" target="V13">
+  <data key="d4">55.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V07" target="V14">
+  <data key="d4">53.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V07" target="V15">
+  <data key="d4">51.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V08" target="V09">
+  <data key="d4">48.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V08" target="V13">
+  <data key="d4">49.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V08" target="V14">
+  <data key="d4">46.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V08" target="V15">
+  <data key="d4">45.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V09" target="V11">
+  <data key="d4">47.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V09" target="V12">
+  <data key="d4">43.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V09" target="V13">
+  <data key="d4">61.25</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V09" target="V14">
+  <data key="d4">58.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V09" target="V15">
+  <data key="d4">55.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V10" target="V13">
+  <data key="d4">41.5</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V11" target="V13">
+  <data key="d4">49.5</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V11" target="V14">
+  <data key="d4">46.25</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V11" target="V15">
+  <data key="d4">44.0</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V12" target="V13">
+  <data key="d4">43.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V12" target="V14">
+  <data key="d4">41.75</data>
+  <data key="d5">84</data>
+</edge>
+<edge source="V13" target="V14">
+  <data key="d4">59.0</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V13" target="V15">
+  <data key="d4">56.75</data>
+  <data key="d5">85</data>
+</edge>
+<edge source="V14" target="V15">
+  <data key="d4">52.75</data>
+  <data key="d5">85</data>
+</edge>
+</graph></graphml>
