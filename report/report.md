@@ -149,12 +149,9 @@ In short, the MacCarron/Dinkelberg pipeline turned a high-dimensional Likert tab
 
 | Member | Contribution |
 |:-------|:-------------|
-| Member A | Dataset documentation, encoding/missingness rules, notebook 01 |
-| Member B | Similarity thresholding, GraphML exports, theme-slice networks |
-| Member C | Community detection, item-importance analysis, notebook 02 |
-| Member D | Figure theme, Cytoscape views, report narrative and assembly |
-
-Replace Member A-D with real names and adjust the split before final submission.
+| Kushal Balabhadruni | Dataset documentation, Likert encoding and missingness rules, notebook 01 network construction |
+| Rohit Jeswanth | Similarity thresholding, GraphML / theme-slice exports, community detection and item-importance analysis in notebook 02 |
+| Vishak Kashyap K | Figure theme and Cytoscape views, report narrative and assembly, repository organization |
 
 # References
 

@@ -72,4 +72,10 @@ Or open the notebooks under `code/` in Jupyter; they resolve the repo root autom
 
 ## Team
 
-Team 34. See Individual Contribution in `report/report.pdf`.
+Team 34:
+
+1. Kushal Balabhadruni
+2. Rohit Jeswanth
+3. Vishak Kashyap K
+
+See Individual Contribution in `report/report.pdf`.
