@@ -1,0 +1,21 @@
+rank,question_1,question_2,co_endorsement_weight,respondents
+1,E11. University curricula should be updated more frequently to match emerging technologies.,E15. Continuous learning and skill development are essential throughout one's career.,63.25,87
+2,E15. Continuous learning and skill development are essential throughout one's career.,V13. Companies should be held accountable for the environmental impacts of their activities.,62.0,85
+3,E15. Continuous learning and skill development are essential throughout one's career.,S05. Individuals should have greater control over how their personal data are collected and used.,61.75,87
+4,E14. Strong collaborations between universities and industry improve student education.,E15. Continuous learning and skill development are essential throughout one's career.,61.5,87
+5,"V09. Products should be designed to encourage reuse, repair, and recycling.",V13. Companies should be held accountable for the environmental impacts of their activities.,61.25,85
+6,E15. Continuous learning and skill development are essential throughout one's career.,"V09. Products should be designed to encourage reuse, repair, and recycling.",61.0,85
+7,S05. Individuals should have greater control over how their personal data are collected and used.,V13. Companies should be held accountable for the environmental impacts of their activities.,60.5,85
+8,E10. Universities should prioritize innovation and problem-solving over rote learning.,E15. Continuous learning and skill development are essential throughout one's career.,60.5,87
+9,E15. Continuous learning and skill development are essential throughout one's career.,S11. People should be free to express differing opinions as long as they do not promote harm or discrimination.,60.0,87
+10,E15. Continuous learning and skill development are essential throughout one's career.,V14. International cooperation is necessary to effectively address environmental challenges.,59.5,85
+11,E11. University curricula should be updated more frequently to match emerging technologies.,S05. Individuals should have greater control over how their personal data are collected and used.,59.5,87
+12,E11. University curricula should be updated more frequently to match emerging technologies.,"V09. Products should be designed to encourage reuse, repair, and recycling.",59.5,85
+13,V13. Companies should be held accountable for the environmental impacts of their activities.,V14. International cooperation is necessary to effectively address environmental challenges.,59.0,85
+14,E11. University curricula should be updated more frequently to match emerging technologies.,V13. Companies should be held accountable for the environmental impacts of their activities.,59.0,85
+15,S05. Individuals should have greater control over how their personal data are collected and used.,"V09. Products should be designed to encourage reuse, repair, and recycling.",58.5,85
+16,E10. Universities should prioritize innovation and problem-solving over rote learning.,V13. Companies should be held accountable for the environmental impacts of their activities.,58.25,85
+17,"V09. Products should be designed to encourage reuse, repair, and recycling.",V14. International cooperation is necessary to effectively address environmental challenges.,58.0,85
+18,E11. University curricula should be updated more frequently to match emerging technologies.,S11. People should be free to express differing opinions as long as they do not promote harm or discrimination.,57.75,87
+19,E15. Continuous learning and skill development are essential throughout one's career.,V15. Current generations have a responsibility to protect natural resources for future generations.,57.5,85
+20,E10. Universities should prioritize innovation and problem-solving over rote learning.,"V09. Products should be designed to encourage reuse, repair, and recycling.",57.25,85
