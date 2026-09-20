@@ -302,12 +302,21 @@ def write_cytoscape_html(
     weight_max: float = 80.0,
 ) -> Path:
     html_path = CYTO / f"{name}.html"
+    edge_weights = [
+        float(element["data"]["weight"])
+        for element in elements
+        if "weight" in element.get("data", {})
+    ]
+    edge_min = min(edge_weights) if edge_weights else 0.0
+    edge_max = max(edge_weights) if edge_weights else float(weight_max)
     payload = {
         "title": title,
         "elements": elements,
         "nodeSize": node_size,
         "showLabels": show_labels,
         "weightMax": weight_max,
+        "edgeMin": edge_min,
+        "edgeMax": edge_max,
         "bg": PAPER,
         "edge": "#8a8074",
     }
@@ -317,6 +326,9 @@ def write_cytoscape_html(
   <meta charset="utf-8"/>
   <title>LOADING</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+  <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+  <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+  <script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
   <style>
     html, body {{ margin: 0; height: 100%; background: {PAPER}; }}
     #cy {{ width: 1200px; height: 860px; background: {PAPER}; border-top: 1px solid {GRID}; }}
@@ -337,10 +349,15 @@ def write_cytoscape_html(
 </head>
 <body>
   <h1>{title}</h1>
-  <div class="sub">Cytoscape.js force-directed layout (edge strength = spring force)</div>
+  <div class="sub">Force-directed layout (fcose): spring length and stiffness follow edge strength</div>
   <div id="cy"></div>
   <script>
     const payload = {json.dumps(payload)};
+    const strength = (edge) => {{
+      const w = Number(edge.data('weight')) || 1;
+      const lo = Number(payload.edgeMin), hi = Number(payload.edgeMax);
+      return (hi > lo) ? Math.min(Math.max((w - lo) / (hi - lo), 0), 1) : 0.5;
+    }};
     const cy = cytoscape({{
       container: document.getElementById('cy'),
       elements: payload.elements,
@@ -368,7 +385,7 @@ def write_cytoscape_html(
         {{
           selector: 'edge',
           style: {{
-            'width': 'mapData(weight, 0, ' + payload.weightMax + ', 0.5, 4.0)',
+            'width': 'mapData(weight, ' + payload.edgeMin + ', ' + payload.edgeMax + ', 0.5, 4.0)',
             'line-color': payload.edge,
             'opacity': 0.42,
             'curve-style': 'bezier',
@@ -377,24 +394,21 @@ def write_cytoscape_html(
         }}
       ],
       layout: {{
-        name: 'cose',
+        name: 'fcose',
+        quality: 'proof',
         animate: false,
-        padding: 40,
-        nodeRepulsion: 9000,
-        gravity: 0.7,
-        numIter: 2500,
-        initialTemp: 300,
-        nestingFactor: 1.2,
-        idealEdgeLength: edge => {{
-          const w = Number(edge.data('weight')) || 1;
-          const t = Math.min(Math.max(w / payload.weightMax, 0), 1);
-          return 35 + 120 * (1 - t);
-        }},
-        edgeElasticity: edge => {{
-          const w = Number(edge.data('weight')) || 1;
-          const t = Math.min(Math.max(w / payload.weightMax, 0), 1);
-          return 80 + 220 * t;
-        }}
+        randomize: true,
+        padding: 50,
+        nodeDimensionsIncludeLabels: true,
+        packComponents: true,
+        nodeRepulsion: () => 6500,
+        idealEdgeLength: edge => 28 + 170 * (1 - strength(edge)),
+        edgeElasticity: edge => 0.05 + 0.95 * strength(edge),
+        gravity: 0.25,
+        gravityRange: 3.8,
+        numIter: 4000,
+        tilingPaddingVertical: 40,
+        tilingPaddingHorizontal: 40
       }}
     }});
     document.title = 'READY';
@@ -470,6 +484,7 @@ def export_cytoscape_views() -> list[Path]:
     index.write_text(
         f"""<!DOCTYPE html><html><body style="background:{PAPER};font-family:Georgia,serif;color:{INK};padding:2rem">
         <h1>Cytoscape network views</h1>
+        <p>All layouts are force-directed (fcose) with spring length and stiffness from edge weight.</p>
         <ul>{links}</ul>
         <p>Open these HTML files in a browser, or use the PNGs exported beside them in the report.</p>
         </body></html>"""
