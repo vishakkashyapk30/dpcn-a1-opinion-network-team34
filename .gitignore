@@ -14,3 +14,10 @@ artifacts/similarity_matrix.npy
 artifacts/overlap_matrix.npy
 artifacts/similarity_matrix.csv
 artifacts/threshold_scan.csv
+
+# LaTeX build intermediates
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.synctex.gz

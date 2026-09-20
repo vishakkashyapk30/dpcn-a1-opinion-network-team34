@@ -1,0 +1,89 @@
+{
+  "n_kept_respondents": 87,
+  "n_items": 60,
+  "whole_survey_position_correlations": {
+    "extreme_rate_vs_position": {
+      "spearman_rho": 0.4015395787255187,
+      "p_value": 0.0014734507897443856
+    },
+    "entropy_vs_position": {
+      "spearman_rho": -0.5363786660515697,
+      "p_value": 9.992156696096833e-06
+    },
+    "variance_vs_position": {
+      "spearman_rho": -0.5604412398601409,
+      "p_value": 3.212756370568875e-06
+    },
+    "missing_rate_vs_position": {
+      "spearman_rho": 0.5103375848947129,
+      "p_value": 3.104843012020583e-05
+    }
+  },
+  "within_block_position_correlations_theme_controlled": {
+    "extreme_rate": {
+      "per_theme_rho": [
+        0.19302956769521099,
+        0.36103678402252426,
+        -0.18051839201126213,
+        0.20357142857142854
+      ],
+      "per_theme_p": [
+        0.4906537453080515,
+        0.18613188387816176,
+        0.5196960107722204,
+        0.46679507248911234
+      ],
+      "mean_rho": 0.14427984706947541
+    },
+    "entropy_norm": {
+      "per_theme_rho": [
+        -0.2285714285714285,
+        -0.5428571428571428,
+        -0.22877578393506487,
+        -0.2785714285714285
+      ],
+      "per_theme_p": [
+        0.41256617049636035,
+        0.036521822554837366,
+        0.4121369651674516,
+        0.3147094732307908
+      ],
+      "mean_rho": -0.31969394598376616
+    },
+    "variance": {
+      "per_theme_rho": [
+        -0.3071428571428571,
+        -0.6005364328295454,
+        -0.4964285714285714,
+        -0.2285714285714285
+      ],
+      "per_theme_p": [
+        0.2654726857102779,
+        0.017920408285940062,
+        0.05979741374992401,
+        0.41256617049636035
+      ],
+      "mean_rho": -0.4081698224931006
+    }
+  },
+  "respondent_level_paired_tests": {
+    "run_length_second_vs_first_half": {
+      "mean_first": 1.7082521659358434,
+      "mean_second": 3.5879177206594104,
+      "wilcoxon_stat": 288.5,
+      "p_value": 1.544773514332278e-11
+    },
+    "extreme_rate_second_vs_first_half": {
+      "mean_first": 0.4075875452332051,
+      "mean_second": 0.49969690852439136,
+      "wilcoxon_stat": 886.5,
+      "p_value": 0.00016426358079170962
+    }
+  },
+  "missing_cells_by_theme_block": {
+    "T": 11,
+    "E": 8,
+    "S": 13,
+    "V": 30
+  }
+}

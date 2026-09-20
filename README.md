@@ -10,10 +10,11 @@ We build respondent (agent) and attitude networks from the class Likert survey u
 code/                 # notebooks + figure regeneration script
   01_data_and_network.ipynb
   02_analysis.ipynb
+  regenerate_figures.ipynb
   regenerate_figures.py
 artifacts/            # GraphML, tables, metrics (rebuilt by notebooks)
 figures/              # seaborn charts + Cytoscape screenshots/HTML
-report/               # report.md source and report.pdf
+report/               # report.tex (+ figs/) and report.pdf
 requirements.txt
 README.md
 Survey_Results_UC.csv # local only (gitignored)
@@ -35,18 +36,20 @@ From the repository root:
 jupyter nbconvert --to notebook --execute code/01_data_and_network.ipynb --inplace
 jupyter nbconvert --to notebook --execute code/02_analysis.ipynb --inplace
 python3 code/regenerate_figures.py
+# or: open/run code/regenerate_figures.ipynb
 ```
 
-Build the PDF (run pandoc inside `report/` so figure paths resolve):
+Build the PDF from LaTeX (preferred) or the older markdown draft:
 
 ```bash
 cd report
-pandoc report.md -o report.pdf --pdf-engine=xelatex
+pdflatex -interaction=nonstopmode report.tex
+pdflatex -interaction=nonstopmode report.tex
+# optional legacy: pandoc report.md -o report.pdf --pdf-engine=xelatex
 cd ..
 ```
 
 Or open the notebooks under `code/` in Jupyter; they resolve the repo root automatically when launched from `code/` or the root.
-
 ## Outputs
 
 | Path | Contents |
@@ -56,6 +59,7 @@ Or open the notebooks under `code/` in Jupyter; they resolve the repo root autom
 | `artifacts/item_importance.csv` | Shuffle-based item ranking |
 | `figures/*.png` | Seaborn charts and Cytoscape screenshots |
 | `figures/cytoscape/*.html` | Interactive Cytoscape.js views (`index.html`) |
+| `report/report.tex` | LaTeX source (figures in `report/figs/`) |
 | `report/report.pdf` | Assignment report |
 
 ### Cytoscape workflow

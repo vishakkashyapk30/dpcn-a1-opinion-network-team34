@@ -1,0 +1,377 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{graphicx}
+\graphicspath{{figs/}}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[skip=3pt,font=small]{caption}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage[round]{natbib}
+\usepackage{array}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  urlcolor=blue!45!black,
+  citecolor=blue!45!black,
+  linktoc=all,
+}
+
+\setstretch{1.18}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+
+\titlespacing*{\section}{0pt}{1.2ex plus .2ex}{0.55ex plus .1ex}
+\titlespacing*{\subsection}{0pt}{0.95ex plus .2ex}{0.4ex plus .1ex}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.55em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+\setlist{itemsep=2pt, topsep=3pt, parsep=0pt, leftmargin=1.35em}
+
+\setlength{\intextsep}{6pt}
+\setlength{\textfloatsep}{8pt}
+\setlength{\floatsep}{6pt}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{1pt}
+
+\setlength{\cftbeforesecskip}{0.35em}
+\renewcommand{\contentsname}{Table of Contents}
+
+\begin{document}
+
+% ========================= Title page =========================
+\begin{titlepage}
+\thispagestyle{empty}
+\pagenumbering{gobble}
+\centering
+\vspace*{2.2cm}
+{\LARGE International Institute of Information Technology, Hyderabad\par}
+\vspace{0.35cm}
+{\large SC1.440 Dynamical Processes in Complex Networks\par}
+\vspace{1.6cm}
+{\Huge\bfseries Opinion Network Formation\par}
+\vspace{0.45cm}
+{\Large DPCN Assignment 1\par}
+\vspace{1.8cm}
+{\large\textbf{Team 34}\par}
+\vspace{0.9cm}
+\begin{tabular}{c}
+Kushal Balabhadruni \\[0.35em]
+Rohit Jeswanth \\[0.35em]
+Vishak Kashyap K
+\end{tabular}
+\vfill
+{\large GitHub:\\
+\url{https://github.com/vishakkashyapk30/dpcn-a1-opinion-network-team34}\par}
+\vspace{1.2cm}
+\end{titlepage}
+
+% ========================= TOC page =========================
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ================================================================
+\section{Team Name}
+\textbf{Team 34}
+
+\section{GitHub Link}
+\url{https://github.com/vishakkashyapk30/dpcn-a1-opinion-network-team34}
+
+Reproduction: \texttt{code/01\_data\_and\_network.ipynb},
+\texttt{code/02\_analysis.ipynb}, and \texttt{code/regenerate\_figures.ipynb}.
+Figures used below come from that regeneration notebook and from
+\texttt{figures/cytoscape/}.
+
+% ================================================================
+\section{Dataset Documentation}
+
+\subsection{Survey structure}
+The survey records opinions from \textbf{96} respondents on \textbf{60} five-point
+Likert items, in four blocks of 15: Technology~(T), Education~(E), Ethics/Society~(S),
+and Environment~(V). Following \citet{maccarron2020}, we treat the cleaned table as a
+\textbf{bipartite} participant--item incidence structure. Person--person and
+statement--statement graphs are projections of that bipartite view, not contact graphs.
+
+\subsection{Encoding and filters}
+Response labels map to $[-1,-0.5,0,0.5,1]$. Blanks and \texttt{No Comments} are missing
+(not Neutral). Respondents with under \textbf{50\%} item completeness are dropped,
+leaving \textbf{87} of 96. Pairwise agreement scores require at least 20 jointly answered
+items.
+
+\subsection{Univariate picture}
+Figure~\ref{fig:eda} shows a strong Agree skew: mass concentrates at $0.5$ and $1.0$,
+with few strong negatives. Domain violins confirm the same lean in every theme, but not
+equally. Environment is the most cohesive positive block (mean~$0.69$, variance~$0.14$);
+Society follows (mean~$0.64$). Technology is middling; Education is softest and noisiest
+(mean~$0.45$, variance~$0.33$). Averages alone say ``the class mostly agrees.'' The
+network pipeline asks a sharper question: among agreeable respondents, who still clusters
+with whom, and which items create those clusters?
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{eda.png}
+\caption{Encoded Likert mass (left) and opinion distributions by theme (right).}
+\label{fig:eda}
+\end{figure}
+
+% ================================================================
+\section{Pipeline Followed}
+
+\subsection{Conceptual goal}
+Following \citet{maccarron2020}, \citet{dinkelberg2021}, and \citet{maher2020}, we build
+two complementary graphs: an \textbf{agent agreement network} (nodes = respondents;
+edges = high answer similarity) and an \textbf{attitude co-endorsement network}
+(nodes = statements; edges = joint positive endorsement). These are homophily / belief
+networks.
+
+\subsection{Agent similarity}
+For jointly answered items $F_{ij}$ with $n_{ij}=|F_{ij}|$,
+\[
+S_{ij}=n_{ij}-\sum_{f\in F_{ij}}|q_{if}-q_{jf}|.
+\]
+Larger $S_{ij}$ means closer answer profiles. The empirical $S_{ij}$ distribution
+(Figure~\ref{fig:simthresh}, left) peaks near~$35$ and is left-skewed; most pairs are only
+moderately similar.
+
+\subsection{Threshold selection}
+We retain edges with $S_{ij}\ge\theta$ and choose the largest $\theta$ such that the
+giant component still covers about \textbf{80\%} of respondents
+\citep{dinkelberg2021}. Figure~\ref{fig:simthresh} (right) shows that the giant fraction
+stays near~$1$ until roughly~$\theta\approx 20$, then declines; it crosses the $0.8$
+target at \textbf{$\theta=41.5$}. That cut sits in the upper tail of $S_{ij}$, so the
+kept edges are the strongest agreements only. The resulting agent graph has 87 nodes,
+456 edges, density~$0.122$, average degree~$\approx 10.5$, and clustering~$0.45$.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.48\textwidth]{similarity.png}\hfill
+\includegraphics[width=0.48\textwidth]{threshold.png}
+\caption{Left: pairwise agreement $S_{ij}$ with chosen $\theta=41.5$.
+Right: giant-component fraction vs.\ threshold (target~$80\%$).}
+\label{fig:simthresh}
+\end{figure}
+
+\subsection{Attitude projection}
+Statement pairs use co-endorsement $W_{ab}=\sum_i q_{ia}q_{ib}$ on the $[-1,1]$ encoding.
+Strong positive $W_{ab}$ means the two items are routinely affirmed together. We keep
+high-$W$ edges for visualization and report the top twenty pairs in
+Table~\ref{tab:top20}.
+
+% ================================================================
+\section{Analysis and Visualizations}
+
+Network drawings are Cytoscape.js force-directed views (\texttt{cose} layout; edge weight
+controls spring strength). Interactive HTML lives under \texttt{figures/cytoscape/}.
+
+\subsection{Agent communities (Louvain)}
+Louvain on the thresholded agent graph yields moderate modularity ($Q\approx 0.275$).
+Meaningful mass sits in communities of sizes \textbf{37}, \textbf{29}, and \textbf{4};
+remaining labels are mostly isolates. Figure~\ref{fig:louvain} shows a shared core with
+two large adjacent blocs (C0, C1) and a small peripheral pocket (C2), plus many
+unconnected respondents outside the giant component.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{agent_louvain.png}
+\caption{Agent agreement network colored by Louvain community
+(Cytoscape.js, force-directed by edge weight).}
+\label{fig:louvain}
+\end{figure}
+
+Theme means by community (Figure~\ref{fig:comm}) clarify what the cut captures.
+Community~C0 is not an opposing ideology; it is a \textbf{high-intensity} affirmative
+bloc, especially on Society and Environment (means~$\approx 0.82$ and~$0.87$).
+Community~C1 is milder across all themes (means roughly~$0.42$--$0.56$). Community~C2
+($n=4$) mixes moderate T/E/S with high~V. Education remains the lowest theme inside every
+community. The split is graded affirmation, not left--right issue opposition.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{communities.png}
+\caption{Mean theme scores for Louvain communities with size at least~3.}
+\label{fig:comm}
+\end{figure}
+
+\subsection{Girvan--Newman cut}
+On the giant component, Girvan--Newman recovers one dominant community and small
+splinters (Figure~\ref{fig:gn}), rather than two equal camps. Strongest edges (yellow)
+concentrate inside the red core. Relative to clearer bipolar ANES-style splits in the
+cited literature, this class looks \textbf{weakly polarized}: a dense majority neighborhood
+with thin fringe groups.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{agent_girvan_newman.png}
+\caption{Giant component colored by the Girvan--Newman cut
+(Cytoscape.js).}
+\label{fig:gn}
+\end{figure}
+
+\subsection{Attitude co-endorsement network}
+Figure~\ref{fig:att} answers which beliefs travel together. Society and Environment items
+dominate a dense central ball; several Education and Technology items fall out as isolates
+after thresholding (e.g.\ E02--E04, E09, E12, T02, T08, T09). Cross-theme bridges exist,
+but the visual core is an S/V package with selected Education items that everyone affirms
+(continuous learning, curriculum update), not a four-theme mixture of equal weight.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{attitude_themes.png}
+\caption{Attitude co-endorsement network colored by theme
+(Cytoscape.js).}
+\label{fig:att}
+\end{figure}
+
+Table~\ref{tab:top20} lists the twenty strongest co-endorsement pairs. Hub items are
+\textbf{E15} (continuous learning), \textbf{E11} (curriculum update), \textbf{V13}
+(corporate environmental accountability), \textbf{V09} (reuse/repair design), and
+\textbf{S05} (personal-data control). The top ranks mix within-theme Education pairs
+(E11--E15, E14--E15) with cross-theme links that glue Education consensus items to the
+Society/Environment package (E15--V13, E15--S05, S05--V13). That pattern matches the
+Cytoscape core: broadly shared progressive statements co-travel; contested pedagogy items
+do not appear in this top list.
+
+\begin{table}[H]
+\centering
+\caption{Top 20 attitude co-endorsement edges ($W_{ab}$).}
+\label{tab:top20}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}rllp{5.6cm}p{5.6cm}r@{}}
+\toprule
+\# & A & B & Short A & Short B & $W$ \\
+\midrule
+1  & E11 & E15 & Curricula updated for emerging tech & Continuous learning essential & 63.25 \\
+2  & E15 & V13 & Continuous learning essential & Firms accountable for env.\ impact & 62.00 \\
+3  & E15 & S05 & Continuous learning essential & Control over personal data & 61.75 \\
+4  & E14 & E15 & University--industry collaboration & Continuous learning essential & 61.50 \\
+5  & V09 & V13 & Design for reuse/repair & Firms accountable for env.\ impact & 61.25 \\
+6  & E15 & V09 & Continuous learning essential & Design for reuse/repair & 61.00 \\
+7  & S05 & V13 & Control over personal data & Firms accountable for env.\ impact & 60.50 \\
+8  & E10 & E15 & Innovation over rote learning & Continuous learning essential & 60.50 \\
+9  & E15 & S11 & Continuous learning essential & Free expression (non-harmful) & 60.00 \\
+10 & E15 & V14 & Continuous learning essential & Intl.\ env.\ cooperation & 59.50 \\
+11 & E11 & S05 & Curricula updated for emerging tech & Control over personal data & 59.50 \\
+12 & E11 & V09 & Curricula updated for emerging tech & Design for reuse/repair & 59.50 \\
+13 & V13 & V14 & Firms accountable for env.\ impact & Intl.\ env.\ cooperation & 59.00 \\
+14 & E11 & V13 & Curricula updated for emerging tech & Firms accountable for env.\ impact & 59.00 \\
+15 & S05 & V09 & Control over personal data & Design for reuse/repair & 58.50 \\
+16 & E10 & V13 & Innovation over rote learning & Firms accountable for env.\ impact & 58.25 \\
+17 & V09 & V14 & Design for reuse/repair & Intl.\ env.\ cooperation & 58.00 \\
+18 & E11 & S11 & Curricula updated for emerging tech & Free expression (non-harmful) & 57.75 \\
+19 & E15 & V15 & Continuous learning essential & Protect resources for future gens & 57.50 \\
+20 & E10 & V09 & Innovation over rote learning & Design for reuse/repair & 57.25 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Contested vs.\ community-organizing items}
+Variance marks disagreement \emph{content}; shuffle importance
+($1-\overline{\mathrm{ARI}}$ after permuting an item vs.\ baseline Louvain) marks
+disagreement that \emph{organizes people} (Figure~\ref{fig:items}).
+
+The most contested items are Education-led: \textbf{E04}, \textbf{E03}, \textbf{E02},
+then Technology item T08 and Society item S02. No Environment item enters the top
+variance list, consistent with V's tight violin in Figure~\ref{fig:eda}. Shuffle
+importance also elevates Education (\textbf{E04}, \textbf{E01}) and mixes in T02, S15,
+T14, and several V items. So Environment can still structure communities through
+\emph{intensity} differences (C0 vs.\ C1) even when raw variance is low, while Education
+items are both noisy and structurally decisive.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.48\textwidth]{contested.png}\hfill
+\includegraphics[width=0.48\textwidth]{importance.png}
+\caption{Left: highest-variance (most contested) items.
+Right: items whose shuffle most disrupts Louvain communities.}
+\label{fig:items}
+\end{figure}
+
+% ================================================================
+\section{Results and Discussion}
+
+Putting the pieces together yields a coherent class portrait.
+
+\begin{enumerate}
+  \item \textbf{Shared affirmative backbone.} Likert mass and theme violins show broad
+  Agree lean. At $\theta=41.5$ most retained respondents still sit in one giant component
+  ($\sim$80\%), glued by high-agreement edges and by Society/Environment co-endorsement
+  (Table~\ref{tab:top20}, Figure~\ref{fig:att}).
+  \item \textbf{Graded neighborhoods, not bipolar camps.} Louvain finds a high-intensity
+  bloc (C0) and a milder bloc (C1); Girvan--Newman finds one large core plus thin
+  splinters. This is weak polarization by affirmation strength, not issue opposition.
+  \item \textbf{Education is the fault line.} Education has the lowest mean and highest
+  domain variance; its items dominate the contested list and top the importance ranking
+  (E04, E01). Contested pedagogy does not appear among the strongest co-endorsement hubs,
+  which instead feature near-consensus Education statements (E15, E11).
+  \item \textbf{Belief packaging.} The attitude network and top-$W$ pairs show a
+  sustainability / data-rights / continuous-learning package. Technology and contested
+  Education items sit on the periphery or as isolates after thresholding.
+\end{enumerate}
+
+\subsection{What the network view adds}
+Theme means alone miss backbone-versus-fringe geometry, the two intensity neighborhoods,
+the contested-versus-organizing item distinction, and co-endorsement packages among
+statements. The MacCarron/Dinkelberg pipeline turns the Likert table into structure we can
+draw, threshold, and stress-test: students share a societal--environmental core, while
+education practice (and related technology items) organize the remaining disagreements.
+
+A practical reading for the class is therefore not ``students disagree about the
+environment,'' but ``students largely co-endorse sustainability and data-rights
+statements, and diverge more when asked how universities and AI should teach.'' That
+distinction is visible only once agreement edges, community profiles, contestation, and
+co-endorsement hubs are read together.
+
+% ================================================================
+\section{Individual Contribution}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}p{3.6cm}p{11.0cm}@{}}
+\toprule
+\textbf{Member} & \textbf{Contribution} \\
+\midrule
+Kushal Balabhadruni &
+Likert encoding and missingness rules; 50\% completeness filter; EDA and theme
+distribution figures; Dataset Documentation. \\
+\midrule
+Rohit Jeswanth &
+Agreement score $S_{ij}$, threshold scan ($\theta=41.5$), GraphML exports; Louvain /
+Girvan--Newman; item-importance and variance rankings; Pipeline section. \\
+\midrule
+Vishak Kashyap K &
+Attitude co-endorsement network and top-20 table; Cytoscape force-directed views;
+LaTeX report assembly; repository layout and README. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ================================================================
+\section{References}
+\renewcommand{\refname}{}
+\vspace{-1.8em}
+\begin{thebibliography}{9}
+\bibitem[MacCarron et~al.(2020)]{maccarron2020}
+MacCarron, P., Maher, P. J., and Quayle, M. (2020). Identifying opinion-based groups from
+survey data: a bipartite network approach. arXiv:2012.11392.
+\bibitem[Dinkelberg et~al.(2021)]{dinkelberg2021}
+Dinkelberg, A., MacCarron, P., Maher, P. J., and Quayle, M. (2021). Detect opinion-based
+groups and reveal polarisation in survey data. arXiv:2104.14427.
+\bibitem[Maher et~al.(2020)]{maher2020}
+Maher, P. J., MacCarron, P., and Quayle, M. (2020). Mapping public health responses with
+attitude networks. \emph{British Journal of Social Psychology}.
+\end{thebibliography}
+
+\end{document}
