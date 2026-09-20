@@ -118,9 +118,9 @@ Society follows (mean~$0.64$). Technology is middling; Education is softest and 
 network pipeline asks a sharper question: among agreeable respondents, who still clusters
 with whom, and which items create those clusters?
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.92\textwidth]{eda.png}
+\includegraphics[width=0.72\textwidth]{eda.png}
 \caption{Encoded Likert mass (left) and opinion distributions by theme (right).}
 \label{fig:eda}
 \end{figure}
@@ -153,10 +153,10 @@ target at \textbf{$\theta=41.5$}. That cut sits in the upper tail of $S_{ij}$, s
 kept edges are the strongest agreements only. The resulting agent graph has 87 nodes,
 456 edges, density~$0.122$, average degree~$\approx 10.5$, and clustering~$0.45$.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.48\textwidth]{similarity.png}\hfill
-\includegraphics[width=0.48\textwidth]{threshold.png}
+\includegraphics[width=0.4\textwidth]{similarity.png}\hfill
+\includegraphics[width=0.4\textwidth]{threshold.png}
 \caption{Left: pairwise agreement $S_{ij}$ with chosen $\theta=41.5$.
 Right: giant-component fraction vs.\ threshold (target~$80\%$).}
 \label{fig:simthresh}
@@ -175,72 +175,89 @@ Network drawings are Cytoscape.js force-directed views (\texttt{cose} layout; ed
 controls spring strength). Interactive HTML lives under \texttt{figures/cytoscape/}.
 
 \subsection{Agent communities (Louvain)}
-Louvain on the thresholded agent graph yields moderate modularity ($Q\approx 0.275$).
-Meaningful mass sits in communities of sizes \textbf{37}, \textbf{29}, and \textbf{4};
-remaining labels are mostly isolates. Figure~\ref{fig:louvain} shows a shared core with
-two large adjacent blocs (C0, C1) and a small peripheral pocket (C2), plus many
-unconnected respondents outside the giant component.
+Louvain returns 20 communities in total, but only three contain more than one member:
+sizes \textbf{37} (C0), \textbf{29} (C1), and \textbf{4} (C2). Modularity is moderate
+($Q\approx 0.275$), meaning these communities are only somewhat more internally
+connected than a random graph of the same density would be. The other 17 communities are
+singletons, and they are exactly the respondents who have zero edges at $\theta=41.5$
+(cleared the completeness filter but did not agree strongly enough with anyone else):
+nodes with no edges cannot be merged into any group, so Louvain correctly leaves them
+alone. In Figure~\ref{fig:louvain}, C0 and C1 sit next to
+each other with direct edges running between their members (they are not two separate
+components); C2 sits at the boundary between them; the singleton respondents appear as
+isolated points scattered around the frame.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.88\textwidth]{agent_louvain.png}
+\includegraphics[width=0.6\textwidth]{agent_louvain.png}
 \caption{Agent agreement network colored by Louvain community
 (Cytoscape.js, force-directed by edge weight).}
 \label{fig:louvain}
 \end{figure}
 
-Theme means by community (Figure~\ref{fig:comm}) clarify what the cut captures.
-Community~C0 is not an opposing ideology; it is a \textbf{high-intensity} affirmative
-bloc, especially on Society and Environment (means~$\approx 0.82$ and~$0.87$).
-Community~C1 is milder across all themes (means roughly~$0.42$--$0.56$). Community~C2
-($n=4$) mixes moderate T/E/S with high~V. Education remains the lowest theme inside every
-community. The split is graded affirmation, not left--right issue opposition.
+Figure~\ref{fig:comm} plots each community's mean score on each theme. Both C0 and C1
+score above zero (the Agree side) on all four themes, so the two communities are not an
+agree-versus-disagree split. C0 scores higher than C1 on every theme, most noticeably on
+Society (mean~$\approx 0.82$) and Environment (mean~$\approx 0.87$); C1's four theme
+means stay in a narrower~$0.42$--$0.56$ range. C2 ($n=4$) has moderate Technology,
+Education, and Society means alongside a higher Environment mean. Education has the
+lowest mean in all three communities. So C0 and C1 differ in how strongly and
+consistently their members agree, not in which direction they lean.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.82\textwidth]{communities.png}
+\includegraphics[width=0.58\textwidth]{communities.png}
 \caption{Mean theme scores for Louvain communities with size at least~3.}
 \label{fig:comm}
 \end{figure}
 
 \subsection{Girvan--Newman cut}
-On the giant component, Girvan--Newman recovers one dominant community and small
-splinters (Figure~\ref{fig:gn}), rather than two equal camps. Strongest edges (yellow)
-concentrate inside the red core. Relative to clearer bipolar ANES-style splits in the
-cited literature, this class looks \textbf{weakly polarized}: a dense majority neighborhood
-with thin fringe groups.
+Girvan--Newman repeatedly deletes the edge with the highest \emph{betweenness} (the edge
+lying on the largest number of shortest paths between other node pairs) until the graph
+splits. Applied to the 70-node giant component, the first split is highly uneven:
+\textbf{64, 4, and 2} nodes (Figure~\ref{fig:gn}), not two groups of comparable size. The
+highest-weight edges (yellow) sit inside the 64-node group, and the two small splinter
+groups are attached to it by only one or two low-weight edges, which is exactly why the
+algorithm removed those edges first. Together with Louvain's moderate modularity, this
+points to one dominant, densely connected group with a few small groups loosely attached,
+rather than two comparably sized opposing camps as in the bipolar ANES-style splits
+reported in the cited literature.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.88\textwidth]{agent_girvan_newman.png}
+\includegraphics[width=0.6\textwidth]{agent_girvan_newman.png}
 \caption{Giant component colored by the Girvan--Newman cut
 (Cytoscape.js).}
 \label{fig:gn}
 \end{figure}
 
 \subsection{Attitude co-endorsement network}
-Figure~\ref{fig:att} answers which beliefs travel together. Society and Environment items
-dominate a dense central ball; several Education and Technology items fall out as isolates
-after thresholding (e.g.\ E02--E04, E09, E12, T02, T08, T09). Cross-theme bridges exist,
-but the visual core is an S/V package with selected Education items that everyone affirms
-(continuous learning, curriculum update), not a four-theme mixture of equal weight.
+Figure~\ref{fig:att} shows the statement pairs whose co-endorsement $W_{ab}$ clears the
+70th-percentile threshold. Society and Environment items form a densely connected core
+with many edges among them; several Education and Technology items (e.g.\ E02--E04, E09,
+E12, T02, T08, T09) have no surviving edge and appear as isolated nodes. Edges do connect
+different themes, but the core is dominated by Society and Environment items together
+with two broadly endorsed Education items, continuous learning (E15) and curriculum
+update (E11), rather than by an even mix of all four themes.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.88\textwidth]{attitude_themes.png}
+\includegraphics[width=0.6\textwidth]{attitude_themes.png}
 \caption{Attitude co-endorsement network colored by theme
 (Cytoscape.js).}
 \label{fig:att}
 \end{figure}
 
-Table~\ref{tab:top20} lists the twenty strongest co-endorsement pairs. Hub items are
-\textbf{E15} (continuous learning), \textbf{E11} (curriculum update), \textbf{V13}
-(corporate environmental accountability), \textbf{V09} (reuse/repair design), and
-\textbf{S05} (personal-data control). The top ranks mix within-theme Education pairs
-(E11--E15, E14--E15) with cross-theme links that glue Education consensus items to the
-Society/Environment package (E15--V13, E15--S05, S05--V13). That pattern matches the
-Cytoscape core: broadly shared progressive statements co-travel; contested pedagogy items
-do not appear in this top list.
+Table~\ref{tab:top20} lists the twenty strongest co-endorsement pairs. \textbf{E15}
+appears in 9 of these 20 pairs, more than any other item, pairing with items from all
+three other themes; \textbf{E11}, \textbf{V13}, \textbf{V09}, and \textbf{S05} also
+recur repeatedly. Six of the twenty pairs connect two items from the same theme (e.g.\
+E11--E15, E14--E15, V09--V13, V13--V14); the remaining fourteen connect two different
+themes (e.g.\ E15--V13, E15--S05, S05--V13). In other words, respondents who strongly
+endorse one broadly worded statement, such as E15 (``continuous learning is
+essential''), tend to also strongly endorse the other broadly endorsed statements
+regardless of theme label. None of the contested Education items identified in the next
+subsection (E02--E04) appears anywhere in this top-20 list.
 
 \begin{table}[H]
 \centering
@@ -276,6 +293,34 @@ do not appear in this top list.
 \end{tabular}
 \end{table}
 
+\subsection{Which statements sit at the core, and which ones bridge}
+Degree alone only counts how many edges a node has; two other centrality measures ask
+more specific questions about the same attitude network. \textbf{Eigenvector centrality}
+scores a statement highly if it connects to other well-connected statements, computed by
+repeatedly averaging each node's score with its neighbors' scores until the ranking
+stops changing. \textbf{Betweenness centrality} scores a statement highly if it lies on
+many shortest paths between other pairs of statements, i.e.\ removing it would make many
+other items harder to reach from each other through the network.
+
+The top eigenvector-centrality items are \textbf{E15} (continuous learning, $0.230$),
+\textbf{V13} (corporate environmental accountability, $0.225$), \textbf{V09}
+(reuse/repair design, $0.219$), \textbf{E11} (curriculum update, $0.219$), and
+\textbf{S05} (personal-data control, $0.219$); these are the same five items that
+dominate Table~\ref{tab:top20}, confirming that they sit at the well-connected heart of
+the network rather than merely appearing in a few strong pairs. The lowest
+eigenvector scores belong almost entirely to Technology and Education items (T13, E02,
+E03, E04, T03, T02, T08, T01), the same items that are disconnected in
+Figure~\ref{fig:att}.
+
+Betweenness centrality tells a different story: \textbf{T14} (social media algorithms
+cause polarization) has the highest betweenness ($0.0452$), nearly 50\% higher than the
+runner-up V13 ($0.0301$); E15 ($0.0245$), V07 ($0.0245$), and S11 ($0.0212$) follow.
+T14's eigenvector score ($0.190$) is noticeably lower than the other top-betweenness
+items, so T14 is not itself part of the densely-interconnected core; instead it is the
+single most important bridge connecting the more loosely-attached Technology items to
+that core. V13, E15, V07, and S11 score highly on both measures, meaning they are
+central in two different senses at once: deeply embedded \emph{and} load-bearing bridges.
+
 \subsection{Contested vs.\ community-organizing items}
 Variance marks disagreement \emph{content}; shuffle importance
 ($1-\overline{\mathrm{ARI}}$ after permuting an item vs.\ baseline Louvain) marks
@@ -289,10 +334,10 @@ T14, and several V items. So Environment can still structure communities through
 \emph{intensity} differences (C0 vs.\ C1) even when raw variance is low, while Education
 items are both noisy and structurally decisive.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=0.48\textwidth]{contested.png}\hfill
-\includegraphics[width=0.48\textwidth]{importance.png}
+\includegraphics[width=0.4\textwidth]{contested.png}\hfill
+\includegraphics[width=0.4\textwidth]{importance.png}
 \caption{Left: highest-variance (most contested) items.
 Right: items whose shuffle most disrupts Louvain communities.}
 \label{fig:items}
@@ -304,28 +349,42 @@ Right: items whose shuffle most disrupts Louvain communities.}
 Putting the pieces together yields a coherent class portrait.
 
 \begin{enumerate}
-  \item \textbf{Shared affirmative backbone.} Likert mass and theme violins show broad
-  Agree lean. At $\theta=41.5$ most retained respondents still sit in one giant component
-  ($\sim$80\%), glued by high-agreement edges and by Society/Environment co-endorsement
-  (Table~\ref{tab:top20}, Figure~\ref{fig:att}).
-  \item \textbf{Graded neighborhoods, not bipolar camps.} Louvain finds a high-intensity
-  bloc (C0) and a milder bloc (C1); Girvan--Newman finds one large core plus thin
-  splinters. This is weak polarization by affirmation strength, not issue opposition.
-  \item \textbf{Education is the fault line.} Education has the lowest mean and highest
-  domain variance; its items dominate the contested list and top the importance ranking
-  (E04, E01). Contested pedagogy does not appear among the strongest co-endorsement hubs,
-  which instead feature near-consensus Education statements (E15, E11).
-  \item \textbf{Belief packaging.} The attitude network and top-$W$ pairs show a
-  sustainability / data-rights / continuous-learning package. Technology and contested
-  Education items sit on the periphery or as isolates after thresholding.
+  \item \textbf{One connected majority, not separate camps.} Likert mass and theme
+  violins show broad Agree-side scores across the class. At $\theta=41.5$, 70 of 87
+  respondents ($\sim$80\%) form a single giant component, connected through
+  high-agreement edges; the strongest co-endorsement edges among statements
+  (Table~\ref{tab:top20}, Figure~\ref{fig:att}) connect mostly Society and Environment
+  items.
+  \item \textbf{Two neighborhoods that differ in strength, not direction.} Louvain's two
+  large communities (C0, 37 members; C1, 29 members) are both positive on every theme,
+  but C0's means run higher, especially on Society and Environment. Girvan--Newman's
+  uneven 64/4/2 split, together with Louvain's moderate modularity ($Q=0.275$), rules out
+  a two-camp, opposed-ideology structure.
+  \item \textbf{Education items account for most of the disagreement.} Education has the
+  lowest mean and highest variance among the four themes; its items dominate the
+  contested-item ranking and the structural-importance ranking (E04, E03, E02; E04, E01)
+  in Figure~\ref{fig:items}. These same contested items do not appear among the strongest
+  co-endorsement pairs in Table~\ref{tab:top20}, which instead feature the two
+  near-consensus Education items E15 and E11.
+  \item \textbf{A small set of statements is endorsed together far more than the rest.}
+  The attitude network (Figure~\ref{fig:att}) and Table~\ref{tab:top20} show that
+  sustainability items (V09, V13, V14, V15), the data-control item (S05), and the two
+  consensus Education items (E15, E11) are co-endorsed much more strongly than other item
+  combinations. Technology items and the contested Education items sit on the periphery
+  of the network or are disconnected entirely after thresholding.
 \end{enumerate}
 
 \subsection{What the network view adds}
-Theme means alone miss backbone-versus-fringe geometry, the two intensity neighborhoods,
-the contested-versus-organizing item distinction, and co-endorsement packages among
-statements. The MacCarron/Dinkelberg pipeline turns the Likert table into structure we can
-draw, threshold, and stress-test: students share a societal--environmental core, while
-education practice (and related technology items) organize the remaining disagreements.
+Computing theme means alone would show only that every theme's average score is
+positive. It would not show that 80\% of respondents form one connected group at a
+principled agreement threshold; that this group splits further into two neighborhoods
+differing in agreement strength rather than direction; that some items are contested
+(high variance) while a partly different set of items is structurally decisive (high
+shuffle-importance); or that specific statements are co-endorsed together far more than
+others. The MacCarron/Dinkelberg pipeline recovers all of this by turning the Likert
+table into a graph that can be thresholded, partitioned, and stress-tested: students
+share a Society/Environment agreement core, while education practice (and related
+Technology items) account for most of the remaining disagreement.
 
 A practical reading for the class is therefore not ``students disagree about the
 environment,'' but ``students largely co-endorse sustainability and data-rights
@@ -344,16 +403,25 @@ co-endorsement hubs are read together.
 \textbf{Member} & \textbf{Contribution} \\
 \midrule
 Kushal Balabhadruni &
-Likert encoding and missingness rules; 50\% completeness filter; EDA and theme
-distribution figures; Dataset Documentation. \\
+Section~3: designed the $[-1,0.5,0,0.5,1]$ Likert encoding and the missing-vs.-neutral
+rule for blanks/\texttt{No Comments}; applied the 50\% completeness filter (96
+$\rightarrow$ 87 respondents); computed the per-theme means/variances and built
+Figure~\ref{fig:eda} (encoded Likert mass and theme violins). \\
 \midrule
 Rohit Jeswanth &
-Agreement score $S_{ij}$, threshold scan ($\theta=41.5$), GraphML exports; Louvain /
-Girvan--Newman; item-importance and variance rankings; Pipeline section. \\
+Section~4 and Section~5.1, 5.2, 5.5: derived the agreement score $S_{ij}$ and ran the
+threshold scan that fixed $\theta=41.5$ against the 80\% giant-component target
+(Figure~\ref{fig:simthresh}); computed Louvain modularity ($Q=0.275$) and the
+Girvan--Newman betweenness cut (64/4/2 split); exported the agent-network GraphML used
+for Figures~\ref{fig:louvain}--\ref{fig:gn}; ran the response-variance and
+shuffle-based item-importance rankings behind Figure~\ref{fig:items}. \\
 \midrule
 Vishak Kashyap K &
-Attitude co-endorsement network and top-20 table; Cytoscape force-directed views;
-LaTeX report assembly; repository layout and README. \\
+Section~4.4 and Section~5.3--5.4: defined the co-endorsement weight $W_{ab}$ and built
+the attitude network and Table~\ref{tab:top20} top-20 ranking; computed eigenvector and
+betweenness centrality on the attitude network; produced the Cytoscape.js force-directed
+renderings (Figures~\ref{fig:louvain}, \ref{fig:gn}, \ref{fig:att}); assembled the LaTeX
+report and repository layout/README. \\
 \bottomrule
 \end{tabular}
 \end{table}
