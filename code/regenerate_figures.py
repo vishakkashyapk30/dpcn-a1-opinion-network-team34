@@ -337,7 +337,7 @@ def write_cytoscape_html(
 </head>
 <body>
   <h1>{title}</h1>
-  <div class="sub">Cytoscape.js view exported from GraphML (cose layout)</div>
+  <div class="sub">Cytoscape.js force-directed layout (edge strength = spring force)</div>
   <div id="cy"></div>
   <script>
     const payload = {json.dumps(payload)};
@@ -381,22 +381,22 @@ def write_cytoscape_html(
         animate: false,
         padding: 40,
         nodeRepulsion: 9000,
-        idealEdgeLength: 70,
         gravity: 0.7,
         numIter: 2500,
         initialTemp: 300,
-        nestingFactor: 1.2
+        nestingFactor: 1.2,
+        idealEdgeLength: edge => {{
+          const w = Number(edge.data('weight')) || 1;
+          const t = Math.min(Math.max(w / payload.weightMax, 0), 1);
+          return 35 + 120 * (1 - t);
+        }},
+        edgeElasticity: edge => {{
+          const w = Number(edge.data('weight')) || 1;
+          const t = Math.min(Math.max(w / payload.weightMax, 0), 1);
+          return 80 + 220 * t;
+        }}
       }}
     }});
-    cy.layout({{
-      name: 'cose',
-      animate: false,
-      padding: 40,
-      nodeRepulsion: 9000,
-      idealEdgeLength: 70,
-      gravity: 0.7,
-      numIter: 2500
-    }}).run();
     document.title = 'READY';
   </script>
 </body>
@@ -515,7 +515,13 @@ def fallback_network_pngs() -> None:
     G_att = nx.read_graphml(ART / "attitude_network_communities.graphml")
 
     def draw(Gdraw, attr, path, title, color_lookup):
-        pos = nx.spring_layout(Gdraw, weight="weight", seed=42, k=2.1 / np.sqrt(max(Gdraw.number_of_nodes(), 1)))
+        pos = nx.spring_layout(
+            Gdraw,
+            weight="weight",
+            seed=42,
+            k=2.1 / np.sqrt(max(Gdraw.number_of_nodes(), 1)),
+            iterations=200,
+        )
         labels = [Gdraw.nodes[n].get(attr) for n in Gdraw.nodes]
         node_colors = [color_lookup.get(v, INK) for v in labels]
         weights = np.array([float(d.get("weight", 1.0)) for *_, d in Gdraw.edges(data=True)], dtype=float)
